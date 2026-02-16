@@ -1,0 +1,9 @@
+_target_: lightning.Trainer
+
+min_epochs: 1
+max_epochs: 50
+accelerator: "auto"   # auto, gpu, cpu
+devices: "auto"       # auto, 1, [0,1]
+precision: "16-mixed" # Mixed precision for faster training
+check_val_every_n_epoch: 1
+deterministic: False

@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Hydra and MLflow
+outputs/
+multirun/
+mlruns/
+logs/
+
+# Data
+data/
+!data/.gitkeep
+
+# Environment
+.env
+.venv
+venv/
