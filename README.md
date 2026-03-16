@@ -1,1 +1,1 @@
-# detection-of-lung-X-ray-pathology
+detection of lung X-ray pathology.
