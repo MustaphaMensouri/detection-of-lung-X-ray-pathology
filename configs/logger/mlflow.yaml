@@ -1,0 +1,6 @@
+_target_: lightning.pytorch.loggers.MLFlowLogger
+
+experiment_name: ${project_name}
+tracking_uri: "file://${work_dir}/logs/mlruns"
+run_name: "${model.model_name}_${now:%Y-%m-%d_%H-%M-%S}"
+log_model: True

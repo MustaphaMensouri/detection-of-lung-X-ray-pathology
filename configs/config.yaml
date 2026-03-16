@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 defaults:
   - model: default
   - data: default
@@ -9,5 +10,24 @@ trainer:
   devices: auto
 
 logger:
-  project: "cv-pipeline"
+  project: "lung-x-ray-pipeline"
   name: "timm-resnet18-run"
+=======
+# @package _global_
+
+defaults:
+  - _self_
+  - data: lung_cancer
+  - model: timm_classifier
+  - logger: mlflow
+  - trainer: default
+  - callbacks: default
+
+# Global settings
+seed: 42
+project_name: "Lung-Cancer-Classification"
+work_dir: ${hydra:runtime.cwd}
+
+# Path to original data (Change this to your actual path)
+data_dir: ${work_dir}/data/raw
+>>>>>>> 9c29815e09286fbb492bb5b9f6a6ed59ec5d5af3
